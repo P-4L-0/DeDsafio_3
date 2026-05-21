@@ -1,0 +1,29 @@
+Origen,Destino,Peso
+Edificio 2,Edificio 3,41.27
+Edificio 3,Edificio 4,37.68
+Edificio 4,Edificio 5,42.46
+Edificio 4,Observatorio Micro Macro,73.03
+Edificio 5,Edifio 6,48.32
+Edificio 5,Parqueo Techado 1,38.20
+Edificio 5,Aula Magna C,98.64
+Edifio 6,Baños CIT,31.00
+Edifio 6,Cafeterias CIT,60.74
+Edifio 6,Edificio 7,29.73
+Edifio 6,Hanagr UDB,55.46
+Hanagr UDB,Edificio 8,56.25
+Aula Magna C,Edificio 8,75.34
+Aula Magna C,Edificio CDIU,75.85
+Edificio CDIU,Edificio C,23.14
+Edificio C,Baños,25.99
+Edificio C,cafeterias,56.51
+Edificio C,Edificio de profesores,55.35
+Edificio C,Edificio B,62.59
+Edificio de profesores,Edificio B,62.96
+Edificio B,Edificio A,26.66
+Edificio A,Edificio R,37.66
+Edificio A,Capilla,48.91
+Edificio A,Biblioteca,83.84
+Capilla,Biblioteca,81.37
+Biblioteca,Pinacoteca,47.03
+Capilla,Pinacoteca,53.99
+Pinacoteca,Casa de Padres,74.26
