@@ -3,6 +3,7 @@ namespace DeDsafio3
     public partial class Form1 : Form
     {
         CGrafo grafoUDB = new CGrafo();
+        string[] rutaCalculada; 
         public Form1()
         {
             InitializeComponent();
@@ -31,14 +32,14 @@ namespace DeDsafio3
             Graphics g = e.Graphics;
             SolidBrush brochaNodo = new SolidBrush(Color.Blue);
             Font fuenteTexto = new Font("Arial", 10);
-            SolidBrush brochaTexto = new SolidBrush(Color.Black);
+            SolidBrush brochaTexto = new SolidBrush(Color.Red);
 
             CVertice actual = grafoUDB.PrimerVertice;
             while (actual != null)
             {
                 // Dibuja un círculo de 15x15 píxeles en la posición del nodo
-                g.FillEllipse(brochaNodo, actual.x, actual.y, 15, 15);
-                g.DrawString(actual.Nombre,fuenteTexto, brochaTexto,  actual.x, actual.y- 15);
+                g.FillEllipse(brochaNodo, actual.x - 5, actual.y, 15, 15);
+                g.DrawString(actual.Nombre,fuenteTexto, brochaTexto,  actual.x - 15, actual.y- 15);
 
                 actual = actual.Siguiente;
             }
@@ -50,9 +51,9 @@ namespace DeDsafio3
             pictureBox1.Invalidate();
         }
 
-        private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
+       /** private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
             MessageBox.Show($"X: {e.X}, Y: {e.Y}");
-        }
+        }**/
     }
 }

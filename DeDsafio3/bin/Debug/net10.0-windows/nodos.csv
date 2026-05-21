@@ -5,11 +5,8 @@ Edificio 4,248,538
 Edificio 5,278,606
 Observatorio Micro Macro,116,467
 Edificio OWCC,148,541
-SubEstacion Norte,207,499
-Entrada NorOeste,136, 196
-Salida NorOeste,148,208
-Entrada Sur,544,659
-Salida Sur,529,697
+Porton NorOeste,145,205
+Porton Sur, 534,685
 Edifio 6,254,678
 Edificio 7,259,720
 Hangar UDB,317,754
@@ -18,19 +15,19 @@ Baños CIT,214,697
 Parqueo Techado 1,358,617
 Aula Magna C,430,623
 Edificio 8,441,678
-Casa de Padres,610,160
-Parqueo Techado 2,640,190
-Biblioteca,530,270
-Pinacoteca,590,280
-Salida NorEste,720,80
-Capilla,610,380
-Edificio R,510,380
-Edificio A,560,450
-Edificio B,560,500
-Magna B,520,510
-Baños,540,550
-Edificio C,570,610
-Edificio CDIU,560,660
-cafeterias,650,620
-Edificio de profesores,660,550
-CDIM,680,520
+Casa de Padres,714,158
+Biblioteca,579,268
+Pinacoteca,659,275
+Porton NorEste,792,66
+Capilla,676,368
+Edificio R,559,373
+Edificio A,605,428
+Edificio B,608,477
+Magna A,553,442
+Magna B,556,491
+Baños,601,535
+Edificio C,635,579
+Edificio CDIU,612,630
+Cafeterias,726,604
+Edificio de Profesores,713,538
+CDIM,748,512

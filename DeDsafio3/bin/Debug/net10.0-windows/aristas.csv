@@ -1,4 +1,9 @@
 Origen,Destino,Peso
+Porton Sur,Edificio 8,54.07
+Porton Sur,Edificio CDIU,56.74 
+Porton NorOeste, Observatorio Micro Macro,152.65 
+Porton NorOeste,Edificio 2,172.61 
+Porton NorEste, Casa de Padres,62.12 
 Edificio 2,Edificio 3,41.27
 Edificio 3,Edificio 4,37.68
 Edificio 4,Edificio 5,42.46
@@ -10,15 +15,15 @@ Edifio 6,Baños CIT,31.00
 Edifio 6,Cafeterias CIT,60.74
 Edifio 6,Edificio 7,29.73
 Edifio 6,Hanagr UDB,55.46
-Hanagr UDB,Edificio 8,56.25
+Hangar UDB,Edificio 8,56.25
 Aula Magna C,Edificio 8,75.34
 Aula Magna C,Edificio CDIU,75.85
 Edificio CDIU,Edificio C,23.14
 Edificio C,Baños,25.99
-Edificio C,cafeterias,56.51
+Edificio C,Cafeterias,56.51
 Edificio C,Edificio de profesores,55.35
 Edificio C,Edificio B,62.59
-Edificio de profesores,Edificio B,62.96
+Edificio de Profesores,Edificio B,62.96
 Edificio B,Edificio A,26.66
 Edificio A,Edificio R,37.66
 Edificio A,Capilla,48.91

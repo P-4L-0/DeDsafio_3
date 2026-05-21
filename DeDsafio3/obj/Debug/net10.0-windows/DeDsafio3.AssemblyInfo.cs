@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeDsafio3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92a36d6c02b28a2d60577e1e38d30065d627f0e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeDsafio3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeDsafio3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
