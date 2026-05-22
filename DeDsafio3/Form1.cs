@@ -3,24 +3,45 @@ namespace DeDsafio3
     public partial class Form1 : Form
     {
         CGrafo grafoUDB = new CGrafo();
-        string[] rutaCalculada; 
+        string[] rutaCalculada;
         public Form1()
         {
             InitializeComponent();
+   
+
         }
 
         public void CargarNodos()
         {
-            String[] lineas = System.IO.File.ReadAllLines("nodos.csv");
+            String[] nodos = System.IO.File.ReadAllLines("nodos.csv");
 
-            for (int i = 1; i < lineas.Length; i++)
+            for (int i = 1; i < nodos.Length; i++)
             {
-                String[] datos = lineas[i].Split(',');
+                String[] datos = nodos[i].Split(',');
                 string nombreEdificio = datos[0].Trim();
                 int posX = int.Parse(datos[1].Trim());
                 int posY = int.Parse(datos[2].Trim());
 
                 grafoUDB.AgregarVertice(nombreEdificio, posX, posY);
+            }
+        }
+
+        public void CargarAristas()
+        {
+            String[] lineas = System.IO.File.ReadAllLines("aristas.csv");
+
+            for (int i = 1; i < lineas.Length; i++)
+            {
+                String[] datos = lineas[i].Split(',');
+                string origen = datos[0].Trim();
+                string destino = datos[1].Trim();
+                double peso = double.Parse(datos[2].Trim());
+
+                //camino de ida
+                grafoUDB.AgregarArco(origen, destino, peso);
+
+                //camino de regreso
+                grafoUDB.AgregarArco(destino, origen, peso);
             }
         }
 
@@ -34,26 +55,85 @@ namespace DeDsafio3
             Font fuenteTexto = new Font("Arial", 10);
             SolidBrush brochaTexto = new SolidBrush(Color.Red);
 
+            //para dibujar los nodos
             CVertice actual = grafoUDB.PrimerVertice;
             while (actual != null)
             {
                 // Dibuja un círculo de 15x15 píxeles en la posición del nodo
                 g.FillEllipse(brochaNodo, actual.x - 5, actual.y, 15, 15);
-                g.DrawString(actual.Nombre,fuenteTexto, brochaTexto,  actual.x - 15, actual.y- 15);
+                g.DrawString(actual.Nombre, fuenteTexto, brochaTexto, actual.x - 15, actual.y - 15);
 
                 actual = actual.Siguiente;
             }
+
+            //para dibujar las lineas de la ruta
+            if (rutaCalculada != null)
+            {
+                Pen lapizRuta = new Pen(Color.Red, 3);
+                for (int i = 0; i < rutaCalculada.Length - 1; i++)
+                {
+                    string nombreOrigen = rutaCalculada[i];
+                    string nombreDestino = rutaCalculada[i + 1];
+
+                    //obtiene las coordenadas de los vertices al mismo tiempo que comprueba que existan
+                    int posXorigen = grafoUDB.BuscarVertice(nombreOrigen).x;
+                    int posYorigen = grafoUDB.BuscarVertice(nombreOrigen).y;
+                    int posXdestino = grafoUDB.BuscarVertice(nombreDestino).x;
+                    int posYdestino = grafoUDB.BuscarVertice(nombreDestino).y;
+
+                    // Dibuja la linea
+                    g.DrawLine(lapizRuta, posXorigen, posYorigen, posXdestino, posYdestino);
+
+                }
+            }
+
         }
 
+        //boton calcular ruta
+
+
+        //boton cargar datos
         private void button2_Click(object sender, EventArgs e)
         {
             this.CargarNodos();
+            this.CargarAristas();
             pictureBox1.Invalidate();
         }
 
-       /** private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"X: {e.X}, Y: {e.Y}");
-        }**/
+            string inicio = comboBox1.Text;
+            string destino = comboBox2.Text;
+
+            MessageBox.Show($"Leyendo -> Inicio: [{inicio}] | Destino: [{destino}]");
+
+            if (string.IsNullOrWhiteSpace(inicio) || string.IsNullOrWhiteSpace(destino))
+            {
+                MessageBox.Show("No se encontró ruta o los nombres no coinciden.");
+                return;
+            }
+            
+            rutaCalculada = grafoUDB.CalcularRutaOptima(inicio, destino);
+
+            // Agregamos esto para depurar
+            if (rutaCalculada == null)
+            {
+                MessageBox.Show("No se encontró ruta o los nombres no coinciden.");
+            }
+            else
+            {
+                MessageBox.Show("Ruta calculada con " + rutaCalculada.Length + " nodos.");
+            }
+
+            pictureBox1.Invalidate();
+
+
+
+        }
+
+        /** private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
+         {
+             MessageBox.Show($"X: {e.X}, Y: {e.Y}");
+         }**/
     }
 }

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "DeDsafio3/1.0.0": {
+        "runtime": {
+          "DeDsafio3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DeDsafio3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -83,6 +83,7 @@
             button1.TabIndex = 10;
             button1.Text = "Calcular Ruta";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label4
             // 
@@ -143,8 +144,9 @@
             // 
             // comboBox2
             // 
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Edificio 2", "Edificio 3", "Edificio 4", "Edificio 5", "Observatorio Micro Macro", "Edificio OWCC", "Porton NorOeste", "Porton Sur", "Edifio 6", "Edificio 7", "Hangar UDB", "Cafeterias CIT", "Baños CIT", "Parqueo Techado 1", "Aula Magna C", "Edificio 8", "Casa de Padres", "Biblioteca", "Pinacoteca", "Porton NorEste", "Capilla", "Edificio R", "Edificio A", "Edificio B", "Magna A", "Magna B", "Baños", "Edificio C", "Edificio CDIU", "Cafeterias", "Edificio de Profesores", "CDIM" });
+            comboBox2.Items.AddRange(new object[] { "Edificio 2", "Edificio 3", "Edificio 4", "Edificio 5", "Observatorio Micro Macro", "Edificio OWCC", "Porton NorOeste", "Porton Sur", "Edificio 6", "Edificio 7", "Hangar UDB", "Cafeterias CIT", "Baños CIT", "Parqueo Techado 1", "Aula Magna C", "Edificio 8", "Casa de Padres", "Biblioteca", "Pinacoteca", "Porton NorEste", "Capilla", "Edificio R", "Edificio A", "Edificio B", "Magna A", "Magna B", "Baños", "Edificio C", "Edificio CDIU", "Cafeterias", "Edificio de Profesores", "CDIM" });
             comboBox2.Location = new Point(15, 135);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(215, 23);
@@ -152,8 +154,9 @@
             // 
             // comboBox1
             // 
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Edificio 2", "Edificio 3", "Edificio 4", "Edificio 5", "Observatorio Micro Macro", "Edificio OWCC", "Porton NorOeste", "Porton Sur", "Edifio 6", "Edificio 7", "Hangar UDB", "Cafeterias CIT", "Baños CIT", "Parqueo Techado 1", "Aula Magna C", "Edificio 8", "Casa de Padres", "Biblioteca", "Pinacoteca", "Porton NorEste", "Capilla", "Edificio R", "Edificio A", "Edificio B", "Magna A", "Magna B", "Baños", "Edificio C", "Edificio CDIU", "Cafeterias", "Edificio de Profesores", "CDIM" });
+            comboBox1.Items.AddRange(new object[] { "Edificio 2", "Edificio 3", "Edificio 4", "Edificio 5", "Observatorio Micro Macro", "Edificio OWCC", "Porton NorOeste", "Porton Sur", "Edificio 6", "Edificio 7", "Hangar UDB", "Cafeterias CIT", "Baños CIT", "Parqueo Techado 1", "Aula Magna C", "Edificio 8", "Casa de Padres", "Biblioteca", "Pinacoteca", "Porton NorEste", "Capilla", "Edificio R", "Edificio A", "Edificio B", "Magna A", "Magna B", "Baños", "Edificio C", "Edificio CDIU", "Cafeterias", "Edificio de Profesores", "CDIM" });
             comboBox1.Location = new Point(15, 82);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(215, 23);
