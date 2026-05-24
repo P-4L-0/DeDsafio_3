@@ -6,8 +6,11 @@ Porton NorOeste,Edificio 2,172.61
 Porton NorEste, Casa de Padres,62.12 
 Edificio 2,Edificio 3,41.27
 Edificio 3,Edificio 4,37.68
+Edificio 3,Observatorio Micro Macro,40.68
 Edificio 4,Edificio 5,42.46
 Edificio 4,Observatorio Micro Macro,73.03
+Edificio 4,Edificio OWCC,56.81 
+Edificio OWCC,Observatorio Micro Macro,43.80 
 Edificio 5,Edificio 6,48.32
 Edificio 5,Parqueo Techado 1,38.20
 Edificio 5,Aula Magna C,98.64
@@ -16,16 +19,24 @@ Edificio 6,Cafeterias CIT,60.74
 Edificio 6,Edificio 7,29.73
 Edificio 6,Hangar UDB,55.46
 Hangar UDB,Edificio 8,56.25
-Aula Magna C,Edificio 8,75.34
+Aula Magna C,Edificio 8,34.01 
 Aula Magna C,Edificio CDIU,75.85
 Edificio CDIU,Edificio C,23.14
 Edificio C,Baños,25.99
+Baños, Magna B,35.21
 Edificio C,Cafeterias,56.51
 Edificio C,Edificio de Profesores,55.35
 Edificio C,Edificio B,62.59
 Edificio de Profesores,Edificio B,62.96
+Edificio de Profesores,Cafeterias,38.64
+Edificio de Profesores,CDIM,20.58
 Edificio B,Edificio A,26.66
+Edificio B,Magna B,29.76
+Edificio B,Magna A,39.70 
+Edificio A,Magana A,30.01 
+Edificio A,Magana B,43.48 
 Edificio A,Edificio R,37.66
+Edificio R,Capilla,62.30
 Edificio A,Capilla,48.91
 Edificio A,Biblioteca,83.84
 Capilla,Biblioteca,81.37

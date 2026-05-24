@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{60048375-7A03-A224-6F7C-727254FC53FB}|DeDsafio3\\DeDsafio3.csproj|solutionrelative:dedsafio3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60048375-7A03-A224-6F7C-727254FC53FB}|DeDsafio3\\DeDsafio3.csproj|c:\\users\\p4l0\\source\\repos\\dedsafio3\\dedsafio3\\cvertice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60048375-7A03-A224-6F7C-727254FC53FB}|DeDsafio3\\DeDsafio3.csproj|solutionrelative:dedsafio3\\cvertice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{60048375-7A03-A224-6F7C-727254FC53FB}|DeDsafio3\\DeDsafio3.csproj|c:\\users\\p4l0\\source\\repos\\dedsafio3\\dedsafio3\\cgrafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60048375-7A03-A224-6F7C-727254FC53FB}|DeDsafio3\\DeDsafio3.csproj|solutionrelative:dedsafio3\\cgrafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60048375-7A03-A224-6F7C-727254FC53FB}|DeDsafio3\\DeDsafio3.csproj|c:\\users\\p4l0\\source\\repos\\dedsafio3\\dedsafio3\\cvertice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60048375-7A03-A224-6F7C-727254FC53FB}|DeDsafio3\\DeDsafio3.csproj|solutionrelative:dedsafio3\\cvertice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60048375-7A03-A224-6F7C-727254FC53FB}|DeDsafio3\\DeDsafio3.csproj|c:\\users\\p4l0\\source\\repos\\dedsafio3\\dedsafio3\\carco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "DeDsafio3\\Form1.cs",
               "ToolTip": "C:\\Users\\p4l0\\source\\repos\\DeDsafio3\\DeDsafio3\\Form1.cs",
               "RelativeToolTip": "DeDsafio3\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAMwCIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-20T01:47:01.16Z",
               "IsPinned": true,
@@ -55,31 +55,31 @@
               "ToolTip": "C:\\Users\\p4l0\\source\\repos\\DeDsafio3\\DeDsafio3\\Form1.cs [Design]",
               "RelativeToolTip": "DeDsafio3\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T18:54:16.297Z",
+              "WhenOpened": "2026-05-23T06:18:50.584Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CVertice.cs",
               "DocumentMoniker": "C:\\Users\\p4l0\\source\\repos\\DeDsafio3\\DeDsafio3\\CVertice.cs",
               "RelativeDocumentMoniker": "DeDsafio3\\CVertice.cs",
               "ToolTip": "C:\\Users\\p4l0\\source\\repos\\DeDsafio3\\DeDsafio3\\CVertice.cs",
               "RelativeToolTip": "DeDsafio3\\CVertice.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA5wCEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAiwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-19T01:04:04.022Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "CGrafo.cs",
               "DocumentMoniker": "C:\\Users\\p4l0\\source\\repos\\DeDsafio3\\DeDsafio3\\CGrafo.cs",
               "RelativeDocumentMoniker": "DeDsafio3\\CGrafo.cs",
               "ToolTip": "C:\\Users\\p4l0\\source\\repos\\DeDsafio3\\DeDsafio3\\CGrafo.cs",
               "RelativeToolTip": "DeDsafio3\\CGrafo.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAswJoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAwwJgAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-19T01:03:07.923Z",
               "EditorCaption": ""
@@ -92,7 +92,7 @@
               "RelativeDocumentMoniker": "DeDsafio3\\CArco.cs",
               "ToolTip": "C:\\Users\\p4l0\\source\\repos\\DeDsafio3\\DeDsafio3\\CArco.cs",
               "RelativeToolTip": "DeDsafio3\\CArco.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-19T01:02:48.29Z",
               "EditorCaption": ""

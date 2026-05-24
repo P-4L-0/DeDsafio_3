@@ -149,6 +149,40 @@ namespace DeDsafio3
             }
             return ruta;
         }
+
+        public string[] RecorridoDFS(string inicio)
+        {
+            CVertice nodoInicio = BuscarVertice(inicio);
+            if (nodoInicio == null) return null;
+
+            CVertice actual = PrimerVertice;
+            while (actual != null)
+            {
+                actual.Visitado = false;
+                actual = actual.Siguiente;
+            }
+
+            List<string> ruta = new List<string>();
+            //limpia y empieza la recursividad
+            DFS_Recursivo(nodoInicio, ruta);
+            return ruta.ToArray(); //retornamos en formato de arrgelo
+        }
+
+        private void DFS_Recursivo(CVertice u, List<string> ruta)
+        {
+            u.Visitado = true;
+            ruta.Add(u.Nombre);
+
+            CArco arcoActual = u.PrimerArco;
+            while (arcoActual != null)
+            {
+                if (!arcoActual.Destino.Visitado)
+                {
+                    DFS_Recursivo(arcoActual.Destino, ruta);
+                }
+                arcoActual = arcoActual.Siguiente;
+            }
+        }
     }
 }
 

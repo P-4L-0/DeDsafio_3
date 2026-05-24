@@ -1,4 +1,4 @@
-namespace DeDsafio3
+﻿namespace DeDsafio3
 {
     public partial class Form1 : Form
     {
@@ -7,6 +7,8 @@ namespace DeDsafio3
         public Form1()
         {
             InitializeComponent();
+
+
         }
 
         public void CargarNodos()
@@ -68,7 +70,6 @@ namespace DeDsafio3
             if (rutaCalculada != null)
             {
                 Pen lapizRuta = new Pen(Color.Red, 3);
-
                 for (int i = 0; i < rutaCalculada.Length - 1; i++)
                 {
                     string nombreOrigen = rutaCalculada[i];
@@ -83,13 +84,8 @@ namespace DeDsafio3
                     // Dibuja la linea
                     g.DrawLine(lapizRuta, posXorigen, posYorigen, posXdestino, posYdestino);
 
-
                 }
-
             }
-
-
-
 
         }
 
@@ -99,7 +95,6 @@ namespace DeDsafio3
         //boton cargar datos
         private void button2_Click(object sender, EventArgs e)
         {
-            grafoUDB = new CGrafo();
             this.CargarNodos();
             this.CargarAristas();
             pictureBox1.Invalidate();
@@ -127,45 +122,13 @@ namespace DeDsafio3
             else
             {
                 MessageBox.Show("Ruta calculada con " + rutaCalculada.Length + " nodos.");
-
-
-                listBox1.Items.Clear();
-                for (int i = 0; i < rutaCalculada.Length - 1; i++)
-                {
-                    string nombreOrigen = rutaCalculada[i];
-                    string nombreDestino = rutaCalculada[i + 1];
-
-                    //obtiene las coordenadas de los vertices al mismo tiempo que comprueba que existan
-                    int posXorigen = grafoUDB.BuscarVertice(nombreOrigen).x;
-                    int posYorigen = grafoUDB.BuscarVertice(nombreOrigen).y;
-                    int posXdestino = grafoUDB.BuscarVertice(nombreDestino).x;
-                    int posYdestino = grafoUDB.BuscarVertice(nombreDestino).y;
-
-                    // inserta los edificios en la
-                    listBox1.Items.Add(nombreOrigen);
-                    listBox1.Items.Add("   |");
-                    listBox1.Items.Add("   ↓");
-                }
-
-                listBox1.Items.Add(rutaCalculada.Last());
             }
 
             pictureBox1.Invalidate();
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            comboBox1.SelectedIndex = -1;
-            comboBox2.SelectedIndex = -1;
-            listBox1.Items.Clear();
-
-            // Limpiar la ruta y refrescar la visualización
-            LimpiarRuta();
-
-        }
-
-        private void LimpiarRuta()
+        private void ClearRouteAndRefresh()
         {
             // Limpiar la ruta calculada
             rutaCalculada = null;
@@ -174,42 +137,11 @@ namespace DeDsafio3
             pictureBox1.Invalidate();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex == -1) return;
+            comboBox1.SelectedIndex = -1;
+            comboBox2.SelectedIndex = -1;
 
-            string nodoInicio = comboBox1.Text;
-
-            // usamos rutaCalcula para dibujar
-            rutaCalculada = grafoUDB.RecorridoDFS(nodoInicio);
-
-            // Limpiamos y llenamos la lista
-            listBox1.Items.Clear();
-            if (rutaCalculada != null)
-            {
-                for (int i = 0; i < rutaCalculada.Length; i++)
-                {
-                    listBox1.Items.Add(rutaCalculada[i]);
-                    if (i < rutaCalculada.Length - 1)
-                    {
-                        listBox1.Items.Add("   |");
-                        listBox1.Items.Add("   ↓");
-                    }
-                }
-            }
-
-            // redibuja
-            pictureBox1.Refresh();
+            // Limpiar la ruta y refrescar la visualización
+            ClearRouteAndRefresh();
         }
-
-
-
-
-        //metodo temporal para obtener la posicion de los edificios
-        /** private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
-        {
-            MessageBox.Show($"X: {e.X}, Y: {e.Y}");
-        }**/
-
-    }
-}
